@@ -1,211 +1,254 @@
-# ·
+# 康禾·智慧医养整合服务平台
 
-## uni-app
+## 项目简介
 
-## ### - 
-- 
-- 
-- 
-- SOS
+康禾智慧医养整合服务平台是一个基于uni-app开发的跨平台医疗健康管理应用，旨在为老年人和慢性病患者提供全方位的健康管理服务。
 
-### - 
-- 
-- 
-- 
+## 功能特性
 
-### - 
-- 
-- 
+### 🏠 首页功能
+- 健康概览：实时显示心率、血压、血氧、步数等健康指标
+- 健康趋势：图表展示健康数据变化趋势
+- 健康服务：在线问诊、用药管理、预约挂号等快捷入口
+- 今日提醒：用药提醒、复诊提醒等智能提醒功能
+- 紧急求助：一键SOS紧急求助功能
 
-### - 
-- BMI
-- 
+### 🩺 医疗服务
+- 在线咨询：图文、视频、电话等多种咨询方式
+- 预约挂号：在线预约医生和检查项目
+- 用药管理：用药记录、提醒、药品库管理
+- 健康档案：健康数据、体检报告、病历记录管理
 
-### - 
-- 
-- 
+### 👨‍👩‍👧‍👦 家庭管理
+- 家庭成员管理：添加、编辑家庭成员信息
+- 健康动态：查看家庭成员健康状态
+- 用药提醒：为家庭成员设置用药提醒
 
-## ### - ****: uni-app (Vue 2)
-- ****: SCSS
-- ****: Vuex ()
-- **UI**: 
+### 📊 健康监测
+- 实时监测：心率、血压、血氧等指标实时监测
+- 健康评估：BMI计算、健康评分、风险评估
+- 健康报告：周报、月报、年度健康报告
 
-### ```
- components/          # 
-    doctor-card.vue  # 
-    health-card.vue  # 
-    auth.vue         # 
-    modal/           # 
- pages/               # 
-    login/           # 
-    index/           # 
-    service/         # 
-    health/          # 
-    family/          # 
-    profile/         # 
- services/            # 
-    medical.js       # 
-    sos.js           # 
-    scheduler.js     # 
- utils/               # 
-    api.js           # API
-    util.js          # 
-    validator.js     # 
-    locator.js       # 
-    encrypt.js       # 
- static/              # 
-    images/          # 
- uni_modules/         # uni-app
+### 🚨 紧急服务
+- 一键求助：紧急情况下快速求助
+- 位置共享：自动发送位置信息给紧急联系人
+- 健康预警：异常健康数据自动预警
+
+## 技术架构
+
+### 前端技术栈
+- **框架**: uni-app (Vue 2)
+- **样式**: SCSS
+- **状态管理**: Vuex (可选)
+- **UI组件**: 自定义组件库
+
+### 项目结构
+```
+├── components/          # 公共组件
+│   ├── doctor-card.vue  # 医生卡片组件
+│   ├── health-card.vue  # 健康数据卡片组件
+│   ├── auth.vue         # 权限验证组件
+│   └── modal/           # 模态框组件
+├── pages/               # 页面文件
+│   ├── login/           # 登录相关页面
+│   ├── index/           # 首页
+│   ├── service/         # 服务页面
+│   ├── health/          # 健康页面
+│   ├── family/          # 家庭页面
+│   └── profile/         # 个人中心
+├── services/            # 业务服务
+│   ├── medical.js       # 医疗服务
+│   ├── sos.js           # 紧急求助服务
+│   └── scheduler.js     # 定时任务服务
+├── utils/               # 工具类
+│   ├── api.js           # API接口管理
+│   ├── util.js          # 通用工具函数
+│   ├── validator.js     # 数据验证工具
+│   ├── locator.js       # 定位地图工具
+│   └── encrypt.js       # 加密工具
+├── static/              # 静态资源
+│   └── images/          # 图片资源
+└── uni_modules/         # uni-app插件
 ```
 
-## ### - Node.js >= 12.0.0
-- HBuilderX  Vue CLI
+## 安装和运行
 
-### ```bash
+### 环境要求
+- Node.js >= 12.0.0
+- HBuilderX 或 Vue CLI
+
+### 安装依赖
+```bash
 npm install
 ```
 
-### ```bash
-# HBuilderX
-# HBuilderX
+### 开发运行
+```bash
+# HBuilderX方式
+# 在HBuilderX中导入项目，点击运行
 
-# Vue CLI
+# Vue CLI方式
 npm run dev
 ```
 
-### ```bash
+### 打包发布
+```bash
 # H5
 npm run build:h5
 
-# 
+# 小程序
 npm run build:mp-weixin
 
 # App
 npm run build:app-plus
 ```
 
-## ### API
- `utils/api.js` API
+## 配置说明
+
+### API配置
+在 `utils/api.js` 中配置后端API地址：
 ```javascript
-const BASE_URL = 'https://api.kanghe.com' // API
+const BASE_URL = 'https://api.kanghe.com' // 替换为实际的API地址
 ```
 
-### `utils/locator.js` API
+### 地图配置
+在 `utils/locator.js` 中配置地图API密钥：
 ```javascript
-const key = 'YOUR_MAP_KEY' // API
+const key = 'YOUR_MAP_KEY' // 替换为实际的地图API密钥
 ```
 
-### `manifest.json` 
+### 权限配置
+在 `manifest.json` 中配置应用权限：
 ```json
 {
   "permissions": {
     "Location": {
-      "description": ""
+      "description": "用于获取用户位置信息"
     },
     "Camera": {
-      "description": ""
+      "description": "用于视频问诊"
     },
     "Microphone": {
-      "description": ""
+      "description": "用于语音咨询"
     }
   }
 }
 ```
 
-## ### 1. 
-- 
-- 
-- 
-- 
-- 
+## 主要功能模块
 
-### 2. 
-- 
-- 
-- 
-- 
+### 1. 用户认证模块
+- 手机号密码登录
+- 微信登录
+- 手机验证码登录
+- 记住登录状态
+- 自动登录
 
-### 3. 
-- 
-- 
-- 
-- 
+### 2. 健康数据模块
+- 健康指标监测
+- 数据上传和同步
+- 健康趋势分析
+- 异常数据预警
 
-### 4. 
-- 
-- 
-- 
+### 3. 医疗服务模块
+- 在线咨询
+- 预约挂号
+- 用药管理
+- 健康档案
 
-### 5. 
-- 
-- 
-- 
-- 
+### 4. 家庭管理模块
+- 家庭成员管理
+- 健康动态监控
+- 用药提醒设置
 
-## ### - ES6+
-- Vue.js
-- SCSS
-- kebab-case
+### 5. 紧急服务模块
+- 一键求助
+- 位置共享
+- 紧急联系人管理
+- 健康预警
 
-### - kebab-case
-- kebab-case
-- camelCase
+## 开发规范
 
-### - 
-- 
-- API
+### 代码规范
+- 使用ES6+语法
+- 遵循Vue.js官方风格指南
+- 使用SCSS编写样式
+- 组件命名采用kebab-case
 
-## ### 1. 
-2. AppID
-3. 
-4. 
+### 文件命名
+- 页面文件：kebab-case
+- 组件文件：kebab-case
+- 工具文件：camelCase
 
-### H5
-1.  `npm run build:h5`
-2.  `dist/build/h5` 
-3. HTTPS
+### 注释规范
+- 使用中文注释
+- 重要功能必须添加注释
+- API接口需要说明参数和返回值
 
-### App
-1. HBuilderX
-2. 
-3. APK/IPA
-4. 
+## 部署说明
 
-## ### 1. 
-H5
-- 
-- 
-- CORS
+### 小程序部署
+1. 在微信开发者工具中导入项目
+2. 配置小程序AppID
+3. 上传代码到微信后台
+4. 提交审核并发布
 
-### 2. 
+### H5部署
+1. 执行 `npm run build:h5`
+2. 将 `dist/build/h5` 目录上传到服务器
+3. 配置域名和HTTPS
 
-- 
-- 
-- 
+### App部署
+1. 在HBuilderX中配置应用信息
+2. 执行云打包或本地打包
+3. 生成APK/IPA文件
+4. 上传到应用商店
 
-### 3. 
+## 常见问题
 
-- 
-- 
-- 
+### 1. 跨域问题
+H5平台可能存在跨域问题，建议：
+- 使用内置浏览器调试
+- 配置代理服务器
+- 后端设置CORS头
 
-## ### v1.0.0 (2024-01-01)
-- 
-- 
-- 
-- 
+### 2. 权限问题
+某些功能需要用户授权，建议：
+- 在首次使用时请求权限
+- 提供权限说明和使用场景
+- 处理权限被拒绝的情况
 
-## 1. Fork 
-2. 
-3. 
-4.  Pull Request
+### 3. 网络问题
+网络请求失败时，建议：
+- 添加重试机制
+- 显示友好的错误提示
+- 提供离线功能
 
-## MIT License
+## 更新日志
 
-## - https://github.com/kanghe/medical-care
-- support@kanghe.com
-- https://www.kanghe.com
+### v1.0.0 (2024-01-01)
+- 初始版本发布
+- 实现基础功能模块
+- 完成用户认证系统
+- 集成健康监测功能
+
+## 贡献指南
+
+1. Fork 项目
+2. 创建功能分支
+3. 提交代码
+4. 创建 Pull Request
+
+## 许可证
+
+MIT License
+
+## 联系方式
+
+- 项目地址：https://github.com/kanghe/medical-care
+- 技术支持：support@kanghe.com
+- 官方网站：https://www.kanghe.com
 
 ---
 
-© 2024 . All rights reserved.
+© 2024 康禾医疗团队. All rights reserved.

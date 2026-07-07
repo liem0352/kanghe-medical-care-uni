@@ -1,0 +1,556 @@
+/* 老年人专用通用样式 */
+@import '@/uni.scss';
+
+/* 响应式断点 */
+$mobile-breakpoint: 768rpx;
+$tablet-breakpoint: 1024rpx;
+$desktop-breakpoint: 1200rpx;
+
+/* 基础布局 */
+.elderly-container {
+  background-color: $elderly-bg-color;
+  min-height: 100vh;
+  padding: 20rpx;
+  max-width: 1200rpx;
+  margin: 0 auto;
+  padding-bottom: 140rpx; /* 为自定义tabBar留出空间 */
+  
+  /* 桌面端布局 */
+  @media (min-width: $desktop-breakpoint) {
+    padding: 40rpx;
+    padding-bottom: 160rpx; /* 桌面端更大的底部间距 */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30rpx;
+    align-items: start;
+  }
+  
+  /* 平板端样式 */
+  @media (min-width: $tablet-breakpoint) {
+    padding-bottom: 150rpx;
+  }
+}
+
+.elderly-card {
+  background-color: $elderly-card-bg;
+  border-radius: $elderly-border-radius;
+  box-shadow: $elderly-shadow;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: normal;
+  
+  /* 桌面端样式 */
+  @media (min-width: $desktop-breakpoint) {
+    padding: 40rpx;
+    margin-bottom: 30rpx;
+  }
+  
+  /* 平板端样式 */
+  @media (min-width: $tablet-breakpoint) {
+    padding: 35rpx;
+    margin-bottom: 25rpx;
+  }
+}
+
+/* 文字样式 */
+.elderly-title, .elderly-text, .elderly-list-title, .elderly-list-desc, .elderly-subtitle, .elderly-text-small, .elderly-grid-text, .service-text, .quick-action-text {
+  word-break: break-all;
+  word-wrap: break-word;
+  white-space: normal;
+}
+
+.elderly-title {
+  font-size: $elderly-font-size-xl;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20rpx;
+  line-height: 1.4;
+  
+  /* 桌面端样式 */
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 44rpx;
+    margin-bottom: 25rpx;
+  }
+}
+
+.elderly-subtitle {
+  font-size: $elderly-font-size-lg;
+  color: #666;
+  margin-bottom: 15rpx;
+  line-height: 1.4;
+  
+  /* 桌面端样式 */
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 40rpx;
+    margin-bottom: 20rpx;
+  }
+}
+
+.elderly-text {
+  font-size: $elderly-font-size-base;
+  color: #333;
+  line-height: 1.6;
+  
+  /* 桌面端样式 */
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 36rpx;
+  }
+}
+
+.elderly-text-small {
+  font-size: $elderly-font-size-sm;
+  color: #999;
+  line-height: 1.4;
+  
+  /* 桌面端样式 */
+  @media (min-width: $desktop-breakpoint) {
+    font-size: 28rpx;
+  }
+}
+
+/* 按钮样式 */
+.elderly-btn {
+  background: $zhaoqing-gradient;
+  color: white;
+  border: none;
+  border-radius: $elderly-border-radius;
+  padding: 25rpx 40rpx;
+  font-size: $elderly-font-size-lg;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: $elderly-shadow;
+  transition: all 0.3s ease;
+  
+  /* 桌面端样式 */
+  @media (min-width: $desktop-breakpoint) {
+    padding: 30rpx 50rpx;
+    font-size: 40rpx;
+    border-radius: 25rpx;
+  }
+  
+  &:active {
+    transform: scale(0.98);
+    box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.15);
+  }
+  
+  &.elderly-btn-secondary {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    color: #333;
+  }
+  
+  &.elderly-btn-warning {
+    background: linear-gradient(135deg, $elderly-color-warning 0%, #ffb74d 100%);
+  }
+  
+  &.elderly-btn-danger {
+    background: linear-gradient(135deg, $elderly-color-danger 0%, #ff6b6b 100%);
+  }
+}
+
+/* 输入框样式 */
+.elderly-input {
+  background-color: #f8f9fa;
+  border: 2rpx solid #e9ecef;
+  border-radius: $elderly-border-radius;
+  padding: 25rpx 20rpx;
+  font-size: $elderly-font-size-lg;
+  color: #333;
+  
+  /* 桌面端样式 */
+  @media (min-width: $desktop-breakpoint) {
+    padding: 30rpx 25rpx;
+    font-size: 40rpx;
+  }
+  
+  &:focus {
+    border-color: $elderly-color-primary;
+    background-color: white;
+  }
+}
+
+/* 列表样式 */
+.elderly-list {
+  .elderly-list-item {
+    background-color: $elderly-card-bg;
+    border-radius: $elderly-border-radius;
+    padding: 25rpx;
+    margin-bottom: 15rpx;
+    box-shadow: 0 2rpx 10rpx rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: normal;
+    
+    /* 桌面端样式 */
+    @media (min-width: $desktop-breakpoint) {
+      padding: 35rpx;
+      margin-bottom: 20rpx;
+    }
+    
+    &:active {
+      transform: scale(0.98);
+      box-shadow: 0 1rpx 5rpx rgba(0, 0, 0, 0.1);
+    }
+    
+    .elderly-list-icon {
+      width: 80rpx;
+      height: 80rpx;
+      margin-right: 20rpx;
+      border-radius: 50%;
+      background: $zhaoqing-gradient;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 36rpx;
+      
+      /* 桌面端样式 */
+      @media (min-width: $desktop-breakpoint) {
+        width: 100rpx;
+        height: 100rpx;
+        font-size: 48rpx;
+        margin-right: 30rpx;
+      }
+    }
+    
+    .elderly-list-content {
+      flex: 1;
+      
+      .elderly-list-title {
+        font-size: $elderly-font-size-lg;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 8rpx;
+        word-break: break-all;
+        word-wrap: break-word;
+        white-space: normal;
+        
+        /* 桌面端样式 */
+        @media (min-width: $desktop-breakpoint) {
+          font-size: 40rpx;
+          margin-bottom: 12rpx;
+        }
+      }
+      
+      .elderly-list-desc {
+        font-size: $elderly-font-size-base;
+        color: #666;
+        word-break: break-all;
+        word-wrap: break-word;
+        white-space: normal;
+        
+        /* 桌面端样式 */
+        @media (min-width: $desktop-breakpoint) {
+          font-size: 36rpx;
+        }
+      }
+    }
+    
+    .elderly-list-arrow {
+      color: #ccc;
+      font-size: 32rpx;
+      
+      /* 桌面端样式 */
+      @media (min-width: $desktop-breakpoint) {
+        font-size: 40rpx;
+      }
+    }
+  }
+}
+
+/* 网格布局 */
+.elderly-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20rpx;
+  margin: 20rpx 0;
+  
+  /* 平板端样式 */
+  @media (min-width: $tablet-breakpoint) {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25rpx;
+  }
+  
+  /* 桌面端样式 */
+  @media (min-width: $desktop-breakpoint) {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30rpx;
+    margin: 30rpx 0;
+  }
+  
+  .elderly-grid-item {
+    background-color: $elderly-card-bg;
+    border-radius: $elderly-border-radius;
+    padding: 30rpx 20rpx;
+    text-align: center;
+    box-shadow: $elderly-shadow;
+    transition: all 0.3s ease;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: normal;
+    
+    /* 桌面端样式 */
+    @media (min-width: $desktop-breakpoint) {
+      padding: 40rpx 30rpx;
+    }
+    
+    &:active {
+      transform: scale(0.95);
+    }
+    
+    .elderly-grid-icon {
+      width: 100rpx;
+      height: 100rpx;
+      margin: 0 auto 15rpx;
+      border-radius: 50%;
+      background: $zhaoqing-gradient;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 48rpx;
+      
+      /* 桌面端样式 */
+      @media (min-width: $desktop-breakpoint) {
+        width: 120rpx;
+        height: 120rpx;
+        font-size: 60rpx;
+        margin-bottom: 20rpx;
+      }
+    }
+    
+    .elderly-grid-text {
+      font-size: $elderly-font-size-base;
+      color: #333;
+      font-weight: bold;
+      word-break: break-all;
+      word-wrap: break-word;
+      white-space: normal;
+      
+      /* 桌面端样式 */
+      @media (min-width: $desktop-breakpoint) {
+        font-size: 40rpx;
+      }
+    }
+  }
+}
+
+/* 健康数据样式 */
+.elderly-health-card {
+  background: $zhaoqing-gradient;
+  color: white;
+  border-radius: $elderly-border-radius;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+  
+  /* 桌面端样式 */
+  @media (min-width: $desktop-breakpoint) {
+    padding: 40rpx;
+    margin-bottom: 30rpx;
+  }
+  
+  .elderly-health-title {
+    font-size: $elderly-font-size-lg;
+    margin-bottom: 15rpx;
+    opacity: 0.9;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: normal;
+    
+    /* 桌面端样式 */
+    @media (min-width: $desktop-breakpoint) {
+      font-size: 40rpx;
+      margin-bottom: 20rpx;
+    }
+  }
+  
+  .elderly-health-value {
+    font-size: $elderly-font-size-xxl;
+    font-weight: bold;
+    margin-bottom: 10rpx;
+    
+    /* 桌面端样式 */
+    @media (min-width: $desktop-breakpoint) {
+      font-size: 60rpx;
+      margin-bottom: 15rpx;
+    }
+  }
+  
+  .elderly-health-unit {
+    font-size: $elderly-font-size-base;
+    opacity: 0.8;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: normal;
+    
+    /* 桌面端样式 */
+    @media (min-width: $desktop-breakpoint) {
+      font-size: 36rpx;
+    }
+  }
+}
+
+/* 状态指示器 */
+.elderly-status {
+  display: inline-block;
+  padding: 8rpx 16rpx;
+  border-radius: 20rpx;
+  font-size: $elderly-font-size-sm;
+  font-weight: bold;
+  
+  /* 桌面端样式 */
+  @media (min-width: $desktop-breakpoint) {
+    padding: 12rpx 24rpx;
+    font-size: 28rpx;
+    border-radius: 25rpx;
+  }
+  
+  &.elderly-status-normal {
+    background-color: rgba(25, 190, 107, 0.1);
+    color: $elderly-color-primary;
+  }
+  
+  &.elderly-status-warning {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: $elderly-color-warning;
+  }
+  
+  &.elderly-status-danger {
+    background-color: rgba(255, 71, 87, 0.1);
+    color: $elderly-color-danger;
+  }
+}
+
+/* 加载状态 */
+.elderly-loading {
+  text-align: center;
+  padding: 40rpx;
+  color: #999;
+  font-size: $elderly-font-size-base;
+  
+  /* 桌面端样式 */
+  @media (min-width: $desktop-breakpoint) {
+    padding: 60rpx;
+    font-size: 36rpx;
+  }
+}
+
+/* 空状态 */
+.elderly-empty {
+  text-align: center;
+  padding: 80rpx 40rpx;
+  color: #999;
+  
+  /* 桌面端样式 */
+  @media (min-width: $desktop-breakpoint) {
+    padding: 120rpx 60rpx;
+  }
+  
+  .elderly-empty-icon {
+    font-size: 120rpx;
+    margin-bottom: 20rpx;
+    opacity: 0.3;
+    
+    /* 桌面端样式 */
+    @media (min-width: $desktop-breakpoint) {
+      font-size: 160rpx;
+      margin-bottom: 30rpx;
+    }
+  }
+  
+  .elderly-empty-text {
+    font-size: $elderly-font-size-lg;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: normal;
+    
+    /* 桌面端样式 */
+    @media (min-width: $desktop-breakpoint) {
+      font-size: 44rpx;
+    }
+  }
+}
+
+/* 特殊布局组件 */
+.elderly-sidebar {
+  /* 桌面端侧边栏 */
+  @media (min-width: $desktop-breakpoint) {
+    position: sticky;
+    top: 20rpx;
+    height: fit-content;
+  }
+}
+
+.elderly-main-content {
+  /* 桌面端主内容区 */
+  @media (min-width: $desktop-breakpoint) {
+    grid-column: 2;
+  }
+}
+
+.elderly-full-width {
+  /* 全宽布局 */
+  @media (min-width: $desktop-breakpoint) {
+    grid-column: 1 / -1;
+  }
+}
+
+/* 响应式工具类 */
+.elderly-hidden-mobile {
+  display: none;
+  
+  @media (min-width: $tablet-breakpoint) {
+    display: block;
+  }
+}
+
+.elderly-hidden-desktop {
+  @media (min-width: $tablet-breakpoint) {
+    display: none;
+  }
+}
+
+/* 响应式间距 */
+.elderly-responsive-padding {
+  padding: 20rpx;
+  
+  @media (min-width: $tablet-breakpoint) {
+    padding: 30rpx;
+  }
+  
+  @media (min-width: $desktop-breakpoint) {
+    padding: 40rpx;
+  }
+}
+
+.elderly-responsive-margin {
+  margin: 20rpx;
+  
+  @media (min-width: $tablet-breakpoint) {
+    margin: 30rpx;
+  }
+  
+  @media (min-width: $desktop-breakpoint) {
+    margin: 40rpx;
+  }
+}
+
+/* 响应式设计 */
+@media (max-width: 750rpx) {
+  .elderly-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .elderly-card {
+    padding: 20rpx;
+  }
+  
+  .elderly-btn {
+    padding: 20rpx 30rpx;
+    font-size: $elderly-font-size-base;
+  }
+} 

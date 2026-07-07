@@ -1,0 +1,41 @@
+{
+	"name": "kanghe-medical-care",
+	"version": "1.0.0",
+	"description": "康禾智慧医养整合服务平台",
+	"main": "main.js",
+	"scripts": {
+		"dev": "uni-app dev",
+		"build": "uni-app build",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [
+		"uni-app",
+		"医疗",
+		"健康",
+		"养老",
+		"智慧医养"
+	],
+	"author": "康禾医疗团队",
+	"license": "MIT",
+	"dependencies": {
+		"@dcloudio/uni-app": "^2.0.0",
+		"@dcloudio/uni-components": "^2.0.0",
+		"@dcloudio/uni-h5": "^2.0.0",
+		"@dcloudio/uni-mp-weixin": "^2.0.0",
+		"@dcloudio/uni-app-plus": "^2.0.0"
+	},
+	"devDependencies": {
+		"@dcloudio/uni-cli-shared": "^2.0.0",
+		"@dcloudio/vue-cli-plugin-uni": "^2.0.0",
+		"@vue/cli-service": "^4.5.0",
+		"sass": "^1.32.0",
+		"sass-loader": "^10.0.0"
+	},
+	"browserslist": [
+		"Android >= 4.4",
+		"ios >= 9"
+	],
+	"uni-app": {
+		"scripts": {}
+	}
+}

@@ -1,0 +1,361 @@
+{
+	"pages": [
+		{
+			"path": "pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"navigationBarBackgroundColor": "#667eea",
+				"navigationBarTextStyle": "white",
+				"navigationStyle": "custom"
+			}
+		},
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "康禾·智慧医养",
+				"navigationBarBackgroundColor": "#19be6b",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": true,
+				"backgroundTextStyle": "dark",
+				"usingComponents": {}
+			}
+		},
+		{
+			"path": "pages/service/service",
+			"style": {
+				"navigationBarTitleText": "服务",
+				"navigationBarBackgroundColor": "#19be6b",
+				"navigationBarTextStyle": "white",
+				"usingComponents": {
+					"modal": "/components/modal/modal"
+				}
+			}
+		},
+		{
+			"path": "pages/health/health",
+			"style": {
+				"navigationBarTitleText": "健康",
+				"navigationBarBackgroundColor": "#19be6b",
+				"navigationBarTextStyle": "white",
+				"usingComponents": {}
+			}
+		},
+		{
+			"path": "pages/family/family",
+			"style": {
+				"navigationBarTitleText": "家庭",
+				"navigationBarBackgroundColor": "#19be6b",
+				"navigationBarTextStyle": "white",
+				"usingComponents": {}
+			}
+		},
+		{
+			"path": "pages/profile/profile",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationBarBackgroundColor": "#19be6b",
+				"navigationBarTextStyle": "white",
+				"enablePullDownRefresh": true,
+				"backgroundTextStyle": "dark",
+				"usingComponents": {}
+			}
+		},
+		{
+			"path": "pages/consult/consult",
+			"style": {
+				"navigationBarTitleText": "在线咨询",
+				"navigationBarBackgroundColor": "#19be6b",
+				"navigationBarTextStyle": "white",
+				"usingComponents": {}
+			}
+		},
+		{
+			"path": "pages/prescription/prescription",
+			"style": {
+				"navigationBarTitleText": "用药管理",
+				"navigationBarBackgroundColor": "#19be6b",
+				"navigationBarTextStyle": "white",
+				"usingComponents": {}
+			}
+		},
+		{
+			"path": "pages/chronic/chronic",
+			"style": {
+				"navigationBarTitleText": "慢病管理",
+				"navigationBarBackgroundColor": "#19be6b",
+				"navigationBarTextStyle": "white",
+				"usingComponents": {}
+			}
+		}
+	],
+	"tabBar": {
+		"color": "#999999",
+		"selectedColor": "#19be6b",
+		"borderStyle": "white",
+		"backgroundColor": "#ffffff",
+		"fontSize": "16px",
+		"height": "60px",
+		"list": [
+			{
+				"pagePath": "pages/index/index",
+				"text": "首页"
+			},
+			{
+				"pagePath": "pages/service/service",
+				"text": "服务"
+			},
+			{
+				"pagePath": "pages/health/health",
+				"text": "健康"
+			},
+			{
+				"pagePath": "pages/family/family",
+				"text": "家庭"
+			},
+			{
+				"pagePath": "pages/profile/profile",
+				"text": "我的"
+			}
+		]
+	},
+	"style": "v2",
+	"sitemapLocation": "sitemap.json",
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^modal$": "@/components/modal/modal",
+			"^doctor-card$": "@/components/doctor-card",
+			"^health-card$": "@/components/health-card",
+			"^auth$": "@/components/auth",
+			"^health-trend$": "@/components/health-trend",
+			"^service-card$": "@/components/service-card",
+			"^family-member$": "@/components/family-member",
+			"^emoji-tabbar$": "@/components/emoji-tabbar/emoji-tabbar"
+		}
+	},
+	"globalStyle": {
+		"navigationBarTitleText": "康禾·智慧医养整合服务平台",
+		"navigationBarTextStyle": "white",
+		"navigationBarBackgroundColor": "#19be6b",
+		"backgroundColor": "#f5f7fa",
+		"enablePullDownRefresh": false
+	},
+	"subPackages": [
+		{
+			"root": "pages/consultation",
+			"pages": [
+				{
+					"path": "text/text",
+					"style": {
+						"navigationBarTitleText": "图文咨询",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "video/video",
+					"style": {
+						"navigationBarTitleText": "视频问诊",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "phone/phone",
+					"style": {
+						"navigationBarTitleText": "电话咨询",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/medication",
+			"pages": [
+				{
+					"path": "record/record",
+					"style": {
+						"navigationBarTitleText": "用药记录",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "reminder/reminder",
+					"style": {
+						"navigationBarTitleText": "用药提醒",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "library/library",
+					"style": {
+						"navigationBarTitleText": "药品库",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/appointment",
+			"pages": [
+				{
+					"path": "doctor/doctor",
+					"style": {
+						"navigationBarTitleText": "预约医生",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "list/list",
+					"style": {
+						"navigationBarTitleText": "我的预约",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "history/history",
+					"style": {
+						"navigationBarTitleText": "预约记录",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/health",
+			"pages": [
+				{
+					"path": "data/data",
+					"style": {
+						"navigationBarTitleText": "健康数据",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "report/report",
+					"style": {
+						"navigationBarTitleText": "体检报告",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "record/record",
+					"style": {
+						"navigationBarTitleText": "病历记录",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/family",
+			"pages": [
+				{
+					"path": "members/members",
+					"style": {
+						"navigationBarTitleText": "成员管理",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "status/status",
+					"style": {
+						"navigationBarTitleText": "健康动态",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "reminders/reminders",
+					"style": {
+						"navigationBarTitleText": "用药提醒",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/report",
+			"pages": [
+				{
+					"path": "weekly/weekly",
+					"style": {
+						"navigationBarTitleText": "周报",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "monthly/monthly",
+					"style": {
+						"navigationBarTitleText": "月报",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "annual/annual",
+					"style": {
+						"navigationBarTitleText": "年度报告",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/fitness",
+			"pages": [
+				{
+					"path": "plan/plan",
+					"style": {
+						"navigationBarTitleText": "计划制定",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "record/record",
+					"style": {
+						"navigationBarTitleText": "运动记录",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				}
+			]
+		},
+		{
+			"root": "pages/common",
+			"pages": [
+				{
+					"path": "terms/terms",
+					"style": {
+						"navigationBarTitleText": "用户协议",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				},
+				{
+					"path": "privacy/privacy",
+					"style": {
+						"navigationBarTitleText": "隐私政策",
+						"navigationBarBackgroundColor": "#19be6b",
+						"navigationBarTextStyle": "white"
+					}
+				}
+			]
+		}
+	]
+}

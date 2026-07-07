@@ -1,0 +1,100 @@
+开始转换……
+小程序路径:  C:/Users/liem/Desktop/康禾医养
+搜索到95个文件(含目录)，耗时：4ms
+
+开始分析文件
+分析文件信息完成，共21组数据
+开始转换文件组为vue文件
+转换进度: 1 / 42   fileKey：app
+转换进度: 2 / 42   fileKey：components/modal/modal
+转换进度: 3 / 42   fileKey：pages/chronic/chronic
+[WARN] 文件 images/chronic.png 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/chronic/chronic
+[WARN] 文件 images/blood-pressure.png 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/chronic/chronic
+[WARN] 文件 images/diabetes.png 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/chronic/chronic
+转换进度: 4 / 42   fileKey：pages/consult/consult
+[WARN] 文件 images/consult.png 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/consult/consult
+[WARN] 文件 images/video.png 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/consult/consult
+转换进度: 5 / 42   fileKey：pages/family/family
+[WARN] 文件 images/back.png 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/family/family
+[WARN] 文件 images/family-bg.jpg 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/family/family
+[WARN] 文件 images/call.png 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/family/family
+[WARN] 文件 images/message.png 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/family/family
+[WARN] 文件 images/heart-icon.png 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/family/family
+[WARN] 文件 images/medicine-icon.png 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/family/family
+[WARN] 文件 images/arrow-down.png 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/family/family
+转换进度: 6 / 42   fileKey：pages/health/health
+转换进度: 7 / 42   fileKey：pages/index/index
+转换进度: 8 / 42   fileKey：pages/login/login
+[WARN] 文件 images/face.png 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/login/login
+[WARN] 文件 images/fingerprint.png 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/login/login
+[WARN] 文件 images/family.png 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/login/login
+[WARN] 文件 images/warning.png 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/login/login
+转换进度: 9 / 42   fileKey：pages/prescription/prescription
+[WARN] 文件 images/back.png 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/prescription/prescription
+[WARN] 文件 images/arrow-down.png 不存在，但仍然对路径进行转换为相对于static目录，运行时需注意！   fileKey: pages/prescription/prescription
+转换进度: 10 / 42   fileKey：pages/profile/profile
+转换进度: 11 / 42   fileKey：pages/service/service
+转换进度: 12 / 42   fileKey：project.config
+转换进度: 13 / 42   fileKey：project.private.config
+转换进度: 14 / 42   fileKey：services/medical
+转换进度: 15 / 42   fileKey：services/scheduler
+转换进度: 16 / 42   fileKey：services/sos
+转换进度: 17 / 42   fileKey：utils/api
+转换进度: 18 / 42   fileKey：utils/encrypt
+转换进度: 19 / 42   fileKey：utils/locator
+转换进度: 20 / 42   fileKey：utils/util
+转换进度: 21 / 42   fileKey：utils/validator
+开始二次遍历及生成vue文件
+转换进度: 22 / 42   fileKey：app
+转换进度: 23 / 42   fileKey：components/modal/modal
+转换进度: 24 / 42   fileKey：pages/chronic/chronic
+转换进度: 25 / 42   fileKey：pages/consult/consult
+转换进度: 26 / 42   fileKey：pages/family/family
+转换进度: 27 / 42   fileKey：pages/health/health
+转换进度: 28 / 42   fileKey：pages/index/index
+转换进度: 29 / 42   fileKey：pages/login/login
+转换进度: 30 / 42   fileKey：pages/prescription/prescription
+转换进度: 31 / 42   fileKey：pages/profile/profile
+转换进度: 32 / 42   fileKey：pages/service/service
+转换进度: 33 / 42   fileKey：project.config
+转换进度: 34 / 42   fileKey：project.private.config
+转换进度: 35 / 42   fileKey：services/medical
+转换进度: 36 / 42   fileKey：services/scheduler
+转换进度: 37 / 42   fileKey：services/sos
+转换进度: 38 / 42   fileKey：utils/api
+转换进度: 39 / 42   fileKey：utils/encrypt
+转换进度: 40 / 42   fileKey：utils/locator
+转换进度: 41 / 42   fileKey：utils/util
+转换进度: 42 / 42   fileKey：utils/validator
+write pages.json success!
+write manifest.json success!
+write main.js success!
+write package.json success!
+
+
+统计信息：
+
+Component数量: 1
+Page数量: 9
+支付api数量: 0
+登录api数量: 0
+chooseMedia数量: 0
+getLocation数量: 1
+getRelationNodes数量: 1
+<ad/>数量: 0
+<map/>数量: 0
+<video/>数量: 0
+Vant组件: ， 数量：0
+
+项目转换完成！
+用时: 4.424s
+工具版本：v2.2.6
+在该小程序项目的同级目录可以看到_uni结尾的项目，即是转换好的uniapp项目，相关日志在该目录里。
+
+使用说明：
+    1.因各种原因，本工具并非100%完美转换！部分语法仍需人工处理！
+    2.工具转换原理及说明文档参考：https://l4rz4zwpx7.k.topthink.com/@kmrvzg72lx/
+    3.如遇运行报错，请添加QQ群(五群：536178289)带图反馈或https://github.com/zhangdaren/miniprogram-to-uniapp提交Issue！
+    4.转换后请查阅_uni目录或_uni-cli目录里的 README.md 和 transform.log
+
+

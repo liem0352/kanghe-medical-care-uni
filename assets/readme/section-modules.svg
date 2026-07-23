@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="100%" viewBox="0 0 1200 140"
+     role="img" aria-labelledby="modTitle modDesc">
+  <title id="modTitle">康禾智慧医养五大功能模块</title>
+  <desc id="modDesc">康禾智慧医养整合服务平台的五大功能模块横排展示:用户认证、健康数据、医疗服务、家庭管理、紧急服务。前四模块为青松绿,紧急服务为琥珀强调。</desc>
+
+  <!-- 背景 -->
+  <rect width="1200" height="140" rx="18" fill="#0E2A28"/>
+
+  <!-- 5 模块卡,等宽排布 -->
+  <g id="modules" transform="translate(64 20)">
+    <!-- 模块 1: 用户认证 -->
+    <g id="m-auth" transform="translate(0 0)">
+      <rect width="200" height="100" rx="14" fill="#16332F" stroke="#2A4F4A" stroke-width="1"/>
+      <!-- 盾牌 + 勾选图标 -->
+      <path d="M 24 24 L 36 19 L 48 24 L 48 40 Q 48 50 36 56 Q 24 50 24 40 Z"
+            fill="none" stroke="#4FB3A5" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M 31 38 L 35 42 L 42 33"
+            fill="none" stroke="#4FB3A5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="68" y="32" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1" fill="#6B8682">01</text>
+      <text x="68" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="16" font-weight="600" fill="#E8E4D9">用户认证</text>
+      <text x="68" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#6B8682">登录 / 权限 / 加密</text>
+    </g>
+
+    <!-- 模块 2: 健康数据 -->
+    <g id="m-health" transform="translate(218 0)">
+      <rect width="200" height="100" rx="14" fill="#16332F" stroke="#2A4F4A" stroke-width="1"/>
+      <!-- 心跳脉冲图标 -->
+      <path d="M 18 38 H 30 L 34 28 L 40 48 L 46 22 L 52 48 L 56 38 H 68"
+            fill="none" stroke="#4FB3A5" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <text x="88" y="32" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1" fill="#6B8682">02</text>
+      <text x="88" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="16" font-weight="600" fill="#E8E4D9">健康数据</text>
+      <text x="88" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#6B8682">监测 / 评估 / 报告</text>
+    </g>
+
+    <!-- 模块 3: 医疗服务 -->
+    <g id="m-medical" transform="translate(436 0)">
+      <rect width="200" height="100" rx="14" fill="#16332F" stroke="#2A4F4A" stroke-width="1"/>
+      <!-- 医疗十字图标 -->
+      <rect x="22" y="28" width="40" height="32" rx="6" fill="none" stroke="#4FB3A5" stroke-width="1.5"/>
+      <path d="M 42 34 V 54 M 32 44 H 52" stroke="#4FB3A5" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="76" y="32" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1" fill="#6B8682">03</text>
+      <text x="76" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="16" font-weight="600" fill="#E8E4D9">医疗服务</text>
+      <text x="76" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#6B8682">问诊 / 挂号 / 用药</text>
+    </g>
+
+    <!-- 模块 4: 家庭管理 -->
+    <g id="m-family" transform="translate(654 0)">
+      <rect width="200" height="100" rx="14" fill="#16332F" stroke="#2A4F4A" stroke-width="1"/>
+      <!-- 家庭房屋图标 -->
+      <path d="M 22 44 L 42 26 L 62 44 V 58 H 22 Z"
+            fill="none" stroke="#4FB3A5" stroke-width="1.5" stroke-linejoin="round"/>
+      <rect x="36" y="46" width="12" height="12" fill="none" stroke="#4FB3A5" stroke-width="1.5"/>
+      <text x="76" y="32" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1" fill="#6B8682">04</text>
+      <text x="76" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="16" font-weight="600" fill="#E8E4D9">家庭管理</text>
+      <text x="76" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#6B8682">成员 / 动态 / 提醒</text>
+    </g>
+
+    <!-- 模块 5: 紧急服务(琥珀强调) -->
+    <g id="m-sos" transform="translate(872 0)">
+      <rect width="200" height="100" rx="14" fill="#16332F" stroke="#2A4F4A" stroke-width="1"/>
+      <!-- SOS 警示图标 -->
+      <circle cx="42" cy="42" r="18" fill="none" stroke="#E8B547" stroke-width="1.5"/>
+      <path d="M 42 32 V 44 M 42 50 V 52" stroke="#E8B547" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="76" y="32" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1" fill="#E8B547">05</text>
+      <text x="76" y="52" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="16" font-weight="600" fill="#E8E4D9">紧急服务</text>
+      <text x="76" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#6B8682">SOS / 定位 / 预警</text>
+    </g>
+  </g>
+</svg>

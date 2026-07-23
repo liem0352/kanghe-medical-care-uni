@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="100%" viewBox="0 0 1200 320"
+     role="img" aria-labelledby="metricsTitle metricsDesc">
+  <title id="metricsTitle">康禾健康指标可视化</title>
+  <desc id="metricsDesc">康禾健康监测仪表盘。3x2 网格展示 6 项核心生命体征指标:心率 72 bpm、血压 120/80 mmHg、血氧 98%、血糖 5.6 mmol/L、体温 36.5°C(琥珀预警略高)、BMI 22.4。每卡含数值、单位、正常范围参考、7 日迷你趋势线。</desc>
+
+  <defs>
+    <linearGradient id="metricsBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0F2D2A"/>
+      <stop offset="1" stop-color="#0B231F"/>
+    </linearGradient>
+    <linearGradient id="metricCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A3A36"/>
+      <stop offset="1" stop-color="#132D2A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="320" rx="22" fill="url(#metricsBg)"/>
+
+  <!-- 章节标题 -->
+  <text x="56" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="20" font-weight="700" fill="#E8E4D9">健康指标可视化 · health metrics</text>
+  <text x="1144" y="36" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="0.8" fill="#6B8682">6 项 · 7 日趋势 · 异常预警</text>
+  <line x1="56" y1="50" x2="1144" y2="50" stroke="#1F413B" stroke-width="1"/>
+
+  <!-- 行 1: 心率 / 血压 / 血氧 -->
+  <g transform="translate(56 60)">
+    <!-- 卡 1: 心率 -->
+    <g transform="translate(0 0)">
+      <rect width="352" height="120" rx="12" fill="url(#metricCard)" stroke="#2A4F4A" stroke-width="1"/>
+      <text x="20" y="26" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1" fill="#6B8682">心率 · HR</text>
+      <!-- 状态点:正常 -->
+      <circle cx="328" cy="22" r="3" fill="#4FB3A5"/>
+      <text x="20" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="30" font-weight="600" fill="#4FB3A5">72</text>
+      <text x="68" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#6B8682">bpm</text>
+      <text x="120" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6B8682">60-100</text>
+      <!-- 7 日趋势:心跳波形 -->
+      <path d="M 20 100 H 40 L 48 88 L 56 110 L 64 84 L 72 110 L 80 100 H 100 L 108 88 L 116 110 L 124 84 L 132 110 L 140 100 H 160 L 168 88 L 176 110 L 184 84 L 192 110 L 200 100 H 220 L 228 88 L 236 110 L 244 84 L 252 110 L 260 100 H 280 L 288 88 L 296 110 L 304 84 L 312 110 L 320 100"
+            fill="none" stroke="#4FB3A5" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+      <text x="20" y="115" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" letter-spacing="0.4" fill="#6B8682">D1</text>
+      <text x="312" y="115" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" letter-spacing="0.4" fill="#6B8682">D7</text>
+    </g>
+    <!-- 卡 2: 血压 -->
+    <g transform="translate(368 0)">
+      <rect width="352" height="120" rx="12" fill="url(#metricCard)" stroke="#2A4F4A" stroke-width="1"/>
+      <text x="20" y="26" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1" fill="#6B8682">血压 · BP</text>
+      <circle cx="328" cy="22" r="3" fill="#4FB3A5"/>
+      <text x="20" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="26" font-weight="600" fill="#4FB3A5">120/80</text>
+      <text x="124" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#6B8682">mmHg</text>
+      <text x="184" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6B8682">&lt;130/85</text>
+      <!-- 7 日柱状(收缩压) -->
+      <g fill="#4FB3A5">
+        <rect x="20"  y="92"  width="8" height="20" rx="1"/>
+        <rect x="36"  y="86"  width="8" height="26" rx="1"/>
+        <rect x="52"  y="90"  width="8" height="22" rx="1"/>
+        <rect x="68"  y="84"  width="8" height="28" rx="1"/>
+        <rect x="84"  y="80"  width="8" height="32" rx="1"/>
+        <rect x="100" y="86"  width="8" height="26" rx="1"/>
+        <rect x="116" y="82"  width="8" height="30" rx="1"/>
+      </g>
+      <!-- 舒张压柱状(次色) -->
+      <g fill="#3D857C">
+        <rect x="148" y="100" width="8" height="12" rx="1"/>
+        <rect x="164" y="96"  width="8" height="16" rx="1"/>
+        <rect x="180" y="98"  width="8" height="14" rx="1"/>
+        <rect x="196" y="92"  width="8" height="20" rx="1"/>
+        <rect x="212" y="94"  width="8" height="18" rx="1"/>
+        <rect x="228" y="96"  width="8" height="16" rx="1"/>
+        <rect x="244" y="90"  width="8" height="22" rx="1"/>
+      </g>
+      <text x="20" y="115" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" letter-spacing="0.4" fill="#6B8682">收缩压</text>
+      <text x="148" y="115" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" letter-spacing="0.4" fill="#6B8682">舒张压</text>
+    </g>
+    <!-- 卡 3: 血氧 -->
+    <g transform="translate(736 0)">
+      <rect width="352" height="120" rx="12" fill="url(#metricCard)" stroke="#2A4F4A" stroke-width="1"/>
+      <text x="20" y="26" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1" fill="#6B8682">血氧 · SpO2</text>
+      <circle cx="328" cy="22" r="3" fill="#4FB3A5"/>
+      <text x="20" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="30" font-weight="600" fill="#4FB3A5">98</text>
+      <text x="68" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#4FB3A5">%</text>
+      <text x="120" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6B8682">≥95%</text>
+      <!-- 7 日水平趋势 + 实时点 -->
+      <path d="M 20 96 Q 60 90 100 96 T 180 96 T 260 96 T 340 96"
+            fill="none" stroke="#4FB3A5" stroke-width="1.5" stroke-linecap="round"/>
+      <circle cx="340" cy="96" r="2.5" fill="#4FB3A5"/>
+      <text x="20" y="115" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" letter-spacing="0.4" fill="#6B8682">D1</text>
+      <text x="340" y="115" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" letter-spacing="0.4" fill="#6B8682">D7</text>
+    </g>
+  </g>
+
+  <!-- 行 2: 血糖 / 体温(琥珀) / BMI -->
+  <g transform="translate(56 200)">
+    <!-- 卡 4: 血糖 -->
+    <g transform="translate(0 0)">
+      <rect width="352" height="120" rx="12" fill="url(#metricCard)" stroke="#2A4F4A" stroke-width="1"/>
+      <text x="20" y="26" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1" fill="#6B8682">血糖 · GLU</text>
+      <circle cx="328" cy="22" r="3" fill="#4FB3A5"/>
+      <text x="20" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="30" font-weight="600" fill="#4FB3A5">5.6</text>
+      <text x="76" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#6B8682">mmol/L</text>
+      <text x="142" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6B8682">3.9-6.1</text>
+      <!-- 7 日点线 -->
+      <polyline points="20,92 60,86 100,90 140,84 180,96 220,88 260,82 300,90"
+                fill="none" stroke="#4FB3A5" stroke-width="1.2" stroke-linejoin="round" stroke-linecap="round"/>
+      <g fill="#4FB3A5">
+        <circle cx="20" cy="92" r="2"/>
+        <circle cx="60" cy="86" r="2"/>
+        <circle cx="100" cy="90" r="2"/>
+        <circle cx="140" cy="84" r="2"/>
+        <circle cx="180" cy="96" r="2"/>
+        <circle cx="220" cy="88" r="2"/>
+        <circle cx="260" cy="82" r="2"/>
+        <circle cx="300" cy="90" r="2"/>
+      </g>
+      <text x="20" y="115" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" letter-spacing="0.4" fill="#6B8682">空腹血糖 · D1-D7</text>
+    </g>
+    <!-- 卡 5: 体温(琥珀色,略高预警示例) -->
+    <g transform="translate(368 0)">
+      <rect width="352" height="120" rx="12" fill="url(#metricCard)" stroke="#E8B547" stroke-width="1" stroke-opacity="0.55"/>
+      <text x="20" y="26" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1" fill="#6B8682">体温 · TEMP</text>
+      <!-- 状态点:琥珀(略高) -->
+      <circle cx="328" cy="22" r="3" fill="#E8B547"/>
+      <text x="20" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="30" font-weight="600" fill="#E8B547">37.6</text>
+      <text x="92" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#6B8682">°C</text>
+      <text x="142" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#E8B547">36.0-37.3</text>
+      <!-- 7 日趋势:末端突破上限虚线 -->
+      <line x1="20" y1="86" x2="320" y2="86" stroke="#E8B547" stroke-width="0.5" stroke-dasharray="2 2" stroke-opacity="0.5"/>
+      <polyline points="20,96 60,94 100,92 140,88 180,84 220,80 260,76 300,72"
+                fill="none" stroke="#E8B547" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="300" cy="72" r="2.5" fill="#E8B547"/>
+      <text x="20" y="115" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" letter-spacing="0.4" fill="#E8B547">异常预警 · 已推送</text>
+    </g>
+    <!-- 卡 6: BMI -->
+    <g transform="translate(736 0)">
+      <rect width="352" height="120" rx="12" fill="url(#metricCard)" stroke="#2A4F4A" stroke-width="1"/>
+      <text x="20" y="26" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1" fill="#6B8682">身体质量 · BMI</text>
+      <circle cx="328" cy="22" r="3" fill="#4FB3A5"/>
+      <text x="20" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="30" font-weight="600" fill="#4FB3A5">22.4</text>
+      <text x="92" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#6B8682">kg/m²</text>
+      <text x="142" y="64" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" fill="#6B8682">18.5-23.9</text>
+      <!-- 7 日阶梯线 -->
+      <path d="M 20 100 L 60 100 L 60 96 L 100 96 L 100 92 L 140 92 L 140 88 L 180 88 L 180 84 L 220 84 L 220 80 L 260 80 L 260 76 L 300 76"
+            fill="none" stroke="#4FB3A5" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <circle cx="300" cy="76" r="2.5" fill="#4FB3A5"/>
+      <text x="20" y="115" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="9" letter-spacing="0.4" fill="#6B8682">正常范围 · 7 日趋势</text>
+    </g>
+  </g>
+</svg>

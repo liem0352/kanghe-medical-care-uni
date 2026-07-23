@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="100%" viewBox="0 0 1200 200"
+     role="img" aria-labelledby="termTitle termDesc">
+  <title id="termTitle">康禾终端使用</title>
+  <desc id="termDesc">康禾项目安装与运行命令。终端窗口风格卡片,展示 npm install 安装依赖、npm run dev 启动 H5 开发模式、npm run build:h5 构建 H5 网页版、npm run build:mp-weixin 构建微信小程序、npm run build:app-plus 构建 iOS / Android App。</desc>
+
+  <defs>
+    <linearGradient id="termBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0F2D2A"/>
+      <stop offset="1" stop-color="#0B231F"/>
+    </linearGradient>
+    <linearGradient id="termWindow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0A201D"/>
+      <stop offset="1" stop-color="#061513"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="200" rx="22" fill="url(#termBg)"/>
+
+  <!-- 章节标题 -->
+  <text x="56" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="20" font-weight="700" fill="#E8E4D9">快速开始 · quick start</text>
+  <text x="1144" y="34" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="0.8" fill="#6B8682">Node.js 14+ · HBuilderX</text>
+  <line x1="56" y1="46" x2="1144" y2="46" stroke="#1F413B" stroke-width="1"/>
+
+  <!-- 终端窗口 -->
+  <g transform="translate(56 58)">
+    <rect width="1088" height="124" rx="12" fill="url(#termWindow)" stroke="#2A4F4A" stroke-width="1"/>
+
+    <!-- 终端标题栏 -->
+    <line x1="0" y1="28" x2="1088" y2="28" stroke="#1F413B" stroke-width="1"/>
+    <!-- 三个窗口控制圆点 -->
+    <circle cx="20" cy="14" r="4" fill="#2A4F4A"/>
+    <circle cx="36" cy="14" r="4" fill="#2A4F4A"/>
+    <circle cx="52" cy="14" r="4" fill="#2A4F4A"/>
+    <text x="544" y="18" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="0.6" fill="#6B8682">kanghe-medical-care-uni · bash</text>
+
+    <!-- 命令行内容 -->
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13">
+      <!-- 行 1: npm install -->
+      <text x="24" y="52" fill="#6B8682">$</text>
+      <text x="40" y="52" fill="#E8E4D9">npm install</text>
+      <text x="148" y="52" fill="#6B8682"># 安装项目依赖</text>
+
+      <!-- 行 2: npm run dev -->
+      <text x="24" y="74" fill="#6B8682">$</text>
+      <text x="40" y="74" fill="#4FB3A5">npm run dev</text>
+      <text x="148" y="74" fill="#6B8682"># 启动 H5 开发模式 · localhost:8080</text>
+
+      <!-- 行 3: npm run build:h5 -->
+      <text x="24" y="96" fill="#6B8682">$</text>
+      <text x="40" y="96" fill="#E8E4D9">npm run build:h5</text>
+      <text x="208" y="96" fill="#6B8682"># 构建网页版 · 静态服务器 / CDN 部署</text>
+
+      <!-- 行 4: 小程序 + App -->
+      <text x="24" y="118" fill="#6B8682">$</text>
+      <text x="40" y="118" fill="#E8E4D9">npm run build:mp-weixin</text>
+      <text x="248" y="118" fill="#6B8682"># 微信小程序 · 微信开发者工具上传审核</text>
+    </g>
+  </g>
+</svg>

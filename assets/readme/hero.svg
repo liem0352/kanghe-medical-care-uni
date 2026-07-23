@@ -1,89 +1,123 @@
 <svg xmlns="http://www.w3.org/2000/svg"
-     width="100%" viewBox="0 0 1200 380"
+     width="100%" viewBox="0 0 1200 360"
      role="img" aria-labelledby="heroTitle heroDesc">
   <title id="heroTitle">康禾智慧医养整合服务平台</title>
   <desc id="heroDesc">康禾智慧医养整合服务平台 README hero。左侧为标题与元数据,右侧为 2x2 健康指标卡阵列:心率 72 bpm、血压 120/80 mmHg、血氧 98%、步数 6,542,每卡配迷你趋势线。</desc>
 
-  <!-- 背景:深松林绿黑,自包含,在 GitHub 明暗主题下均可读 -->
-  <rect width="1200" height="380" rx="26" fill="#0E2A28"/>
+  <!-- 背景:深松林绿黑,自包含,GitHub 明暗主题下均可读 -->
+  <defs>
+    <linearGradient id="heroBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0F2D2A"/>
+      <stop offset="1" stop-color="#0B231F"/>
+    </linearGradient>
+    <linearGradient id="heroCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A3A36"/>
+      <stop offset="1" stop-color="#132D2A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="360" rx="22" fill="url(#heroBg)"/>
+
+  <!-- 顶部分隔细线 -->
+  <line x1="56" y1="48" x2="1144" y2="48" stroke="#1F413B" stroke-width="1"/>
+  <text x="56" y="38" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1.5" fill="#4FB3A5">UNI-APP · MEDICAL CARE · README</text>
+  <text x="1144" y="38" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1" fill="#6B8682">v1.0 · main</text>
 
   <!-- 左侧标题块 -->
-  <g id="title-block" transform="translate(56 40)">
-    <!-- 类别标签 + 健康状态点 -->
-    <circle cx="6" cy="15" r="4" fill="#4FB3A5"/>
-    <text x="20" y="20" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="1.5" fill="#4FB3A5">uni-app · MEDICAL CARE</text>
-
+  <g id="title-block" transform="translate(56 96)">
     <!-- 主标题 -->
-    <text x="0" y="86" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="44" font-weight="700" fill="#E8E4D9">康禾智慧医养整合服务</text>
+    <text x="0" y="44" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="46" font-weight="700" fill="#E8E4D9">康禾智慧医养整合服务</text>
 
     <!-- 副标题 -->
-    <text x="0" y="128" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="18" fill="#6B8682">跨平台医疗健康应用 · uni-app · Vue 2</text>
+    <text x="0" y="84" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="18" fill="#9DB5B0">跨平台医疗健康应用 - uni-app - Vue 2</text>
 
-    <!-- 元数据 -->
-    <text x="0" y="170" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="14" letter-spacing="0.5" fill="#6B8682">5 模块 · 健康监测 · SOS · SCSS</text>
+    <!-- 元数据竖排三栏 -->
+    <g transform="translate(0 116)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="13" letter-spacing="0.4">
+      <text x="0" y="14" fill="#6B8682">5 模块</text>
+      <text x="84" y="14" fill="#6B8682">·</text>
+      <text x="96" y="14" fill="#6B8682">健康监测</text>
+      <text x="180" y="14" fill="#6B8682">·</text>
+      <text x="192" y="14" fill="#6B8682">紧急 SOS</text>
+      <text x="276" y="14" fill="#6B8682">·</text>
+      <text x="288" y="14" fill="#6B8682">SCSS / BEM</text>
+    </g>
+
+    <!-- 底部行动条:多端覆盖徽章 -->
+    <g transform="translate(0 156)" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="0.6">
+      <rect x="0"   y="0" width="74"  height="22" rx="11" fill="none" stroke="#2A4F4A"/>
+      <text x="37"  y="15" text-anchor="middle" fill="#9DB5B0">H5</text>
+      <rect x="86"  y="0" width="120" height="22" rx="11" fill="none" stroke="#2A4F4A"/>
+      <text x="146" y="15" text-anchor="middle" fill="#9DB5B0">微信小程序</text>
+      <rect x="218" y="0" width="64"  height="22" rx="11" fill="none" stroke="#2A4F4A"/>
+      <text x="250" y="15" text-anchor="middle" fill="#9DB5B0">App</text>
+      <rect x="294" y="0" width="120" height="22" rx="11" fill="none" stroke="#E8B547"/>
+      <text x="354" y="15" text-anchor="middle" fill="#E8B547">一键 SOS</text>
+    </g>
   </g>
 
-  <!-- 右侧 2x2 健康指标卡阵列(motif) -->
-  <g id="metric-cards" transform="translate(720 40)">
+  <!-- 右侧 2x2 健康指标卡阵列(motif,从首页原生 UI 派生) -->
+  <g id="metric-cards" transform="translate(740 72)">
     <!-- 卡1: 心率 -->
-    <g id="card-hr" transform="translate(4 2)">
-      <rect width="200" height="140" rx="14" fill="#16332F" stroke="#2A4F4A" stroke-width="1"/>
-      <text x="16" y="28" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1" fill="#6B8682">心率 / HR</text>
-      <text x="16" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="32" font-weight="600" fill="#4FB3A5">72</text>
-      <text x="64" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#6B8682">bpm</text>
+    <g id="card-hr" transform="translate(0 0)">
+      <rect width="200" height="130" rx="14" fill="url(#heroCard)" stroke="#2A4F4A" stroke-width="1"/>
+      <text x="16" y="26" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1" fill="#6B8682">心率 / HR</text>
+      <text x="16" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="30" font-weight="600" fill="#4FB3A5">72</text>
+      <text x="60" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#6B8682">bpm</text>
       <!-- 心跳波形(ECG) -->
-      <path d="M 16 114 H 36 L 44 102 L 52 124 L 60 88 L 68 124 L 76 114 H 96 L 104 102 L 112 124 L 120 88 L 128 124 L 136 114 H 156 L 164 102 L 172 124 L 180 114"
+      <path d="M 16 108 H 36 L 44 96 L 52 118 L 60 82 L 68 118 L 76 108 H 96 L 104 96 L 112 118 L 120 82 L 128 118 L 136 108 H 156 L 164 96 L 172 118 L 180 108"
             fill="none" stroke="#4FB3A5" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
     </g>
 
     <!-- 卡2: 血压 -->
-    <g id="card-bp" transform="translate(220 2)">
-      <rect width="200" height="140" rx="14" fill="#16332F" stroke="#2A4F4A" stroke-width="1"/>
-      <text x="16" y="28" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1" fill="#6B8682">血压 / BP</text>
-      <text x="16" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="28" font-weight="600" fill="#4FB3A5">120/80</text>
-      <text x="126" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#6B8682">mmHg</text>
+    <g id="card-bp" transform="translate(216 0)">
+      <rect width="200" height="130" rx="14" fill="url(#heroCard)" stroke="#2A4F4A" stroke-width="1"/>
+      <text x="16" y="26" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1" fill="#6B8682">血压 / BP</text>
+      <text x="16" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="26" font-weight="600" fill="#4FB3A5">120/80</text>
+      <text x="124" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#6B8682">mmHg</text>
       <!-- 迷你柱状 -->
       <g fill="#4FB3A5">
-        <rect x="16"  y="120" width="8" height="8"  rx="1"/>
-        <rect x="30"  y="112" width="8" height="16" rx="1"/>
-        <rect x="44"  y="116" width="8" height="12" rx="1"/>
-        <rect x="58"  y="104" width="8" height="24" rx="1"/>
-        <rect x="72"  y="108" width="8" height="20" rx="1"/>
-        <rect x="86"  y="100" width="8" height="28" rx="1"/>
-        <rect x="100" y="114" width="8" height="14" rx="1"/>
-        <rect x="114" y="106" width="8" height="22" rx="1"/>
-        <rect x="128" y="118" width="8" height="10" rx="1"/>
-        <rect x="142" y="110" width="8" height="18" rx="1"/>
-        <rect x="156" y="116" width="8" height="12" rx="1"/>
-        <rect x="170" y="108" width="8" height="20" rx="1"/>
+        <rect x="16"  y="114" width="8" height="8"  rx="1"/>
+        <rect x="30"  y="106" width="8" height="16" rx="1"/>
+        <rect x="44"  y="110" width="8" height="12" rx="1"/>
+        <rect x="58"  y="98"  width="8" height="24" rx="1"/>
+        <rect x="72"  y="102" width="8" height="20" rx="1"/>
+        <rect x="86"  y="94"  width="8" height="28" rx="1"/>
+        <rect x="100" y="108" width="8" height="14" rx="1"/>
+        <rect x="114" y="100" width="8" height="22" rx="1"/>
+        <rect x="128" y="112" width="8" height="10" rx="1"/>
+        <rect x="142" y="104" width="8" height="18" rx="1"/>
+        <rect x="156" y="110" width="8" height="12" rx="1"/>
+        <rect x="170" y="102" width="8" height="20" rx="1"/>
       </g>
     </g>
 
     <!-- 卡3: 血氧 -->
-    <g id="card-spo2" transform="translate(4 158)">
-      <rect width="200" height="140" rx="14" fill="#16332F" stroke="#2A4F4A" stroke-width="1"/>
-      <text x="16" y="28" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1" fill="#6B8682">血氧 / SpO2</text>
-      <text x="16" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="32" font-weight="600" fill="#4FB3A5">98</text>
-      <text x="70" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#4FB3A5">%</text>
-      <!-- 迷你水平趋势线(轻微波动 + 末端实时点) -->
-      <path d="M 16 116 Q 36 110 56 116 T 96 116 T 136 116 T 176 116"
+    <g id="card-spo2" transform="translate(0 146)">
+      <rect width="200" height="130" rx="14" fill="url(#heroCard)" stroke="#2A4F4A" stroke-width="1"/>
+      <text x="16" y="26" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1" fill="#6B8682">血氧 / SpO2</text>
+      <text x="16" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="30" font-weight="600" fill="#4FB3A5">98</text>
+      <text x="68" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="18" fill="#4FB3A5">%</text>
+      <!-- 水平趋势线 + 末端实时点 -->
+      <path d="M 16 110 Q 36 104 56 110 T 96 110 T 136 110 T 176 110"
             fill="none" stroke="#4FB3A5" stroke-width="1.5" stroke-linecap="round"/>
-      <circle cx="176" cy="116" r="2.5" fill="#4FB3A5"/>
+      <circle cx="176" cy="110" r="2.5" fill="#4FB3A5"/>
     </g>
 
     <!-- 卡4: 步数(琥珀色,今日提醒) -->
-    <g id="card-steps" transform="translate(220 158)">
-      <rect width="200" height="140" rx="14" fill="#16332F" stroke="#2A4F4A" stroke-width="1"/>
-      <text x="16" y="28" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="1" fill="#6B8682">步数 / 今日提醒</text>
-      <text x="16" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="28" font-weight="600" fill="#E8B547">6,542</text>
-      <text x="120" y="78" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#6B8682">步</text>
-      <!-- 迷你上升阶梯线 -->
-      <path d="M 16 124 L 36 124 L 36 116 L 60 116 L 60 108 L 84 108 L 84 100 L 108 100 L 108 92 L 132 92 L 132 84 L 156 84 L 156 76 L 180 76"
+    <g id="card-steps" transform="translate(216 146)">
+      <rect width="200" height="130" rx="14" fill="url(#heroCard)" stroke="#2A4F4A" stroke-width="1"/>
+      <text x="16" y="26" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1" fill="#6B8682">步数 / 今日提醒</text>
+      <text x="16" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="26" font-weight="600" fill="#E8B547">6,542</text>
+      <text x="118" y="72" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" fill="#6B8682">步</text>
+      <!-- 上升阶梯线 -->
+      <path d="M 16 118 L 36 118 L 36 110 L 60 110 L 60 102 L 84 102 L 84 94 L 108 94 L 108 86 L 132 86 L 132 78 L 156 78 L 156 70 L 180 70"
             fill="none" stroke="#E8B547" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
-      <circle cx="180" cy="76" r="2.5" fill="#E8B547"/>
+      <circle cx="180" cy="70" r="2.5" fill="#E8B547"/>
     </g>
   </g>
 
   <!-- 底部署名 -->
-  <text x="600" y="362" text-anchor="middle" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12" letter-spacing="0.5" fill="#6B8682">作者 liem · 康禾医疗 · uni-app</text>
+  <line x1="56" y1="320" x2="1144" y2="320" stroke="#1F413B" stroke-width="1"/>
+  <text x="56" y="340" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="0.5" fill="#6B8682">作者 liem · 康禾医疗团队</text>
+  <text x="1144" y="340" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="0.5" fill="#6B8682">H5 / 微信小程序 / iOS / Android</text>
 </svg>

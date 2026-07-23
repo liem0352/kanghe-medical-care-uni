@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="100%" viewBox="0 0 1200 240"
+     role="img" aria-labelledby="techTitle techDesc">
+  <title id="techTitle">康禾技术栈</title>
+  <desc id="techDesc">康禾智慧医养整合服务平台技术栈:uni-app 跨端框架、Vue 2 视图层、SCSS + BEM 样式、uView UI 组件库、HBuilderX 开发工具。底部展示多端输出:H5 / 微信小程序 / iOS / Android App。</desc>
+
+  <defs>
+    <linearGradient id="techBg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#0F2D2A"/>
+      <stop offset="1" stop-color="#0B231F"/>
+    </linearGradient>
+    <linearGradient id="techCard" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1A3A36"/>
+      <stop offset="1" stop-color="#132D2A"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="240" rx="22" fill="url(#techBg)"/>
+
+  <!-- 章节标题 -->
+  <text x="56" y="36" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="20" font-weight="700" fill="#E8E4D9">技术栈 · tech stack</text>
+  <text x="1144" y="36" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="0.8" fill="#6B8682">5 CORE · 1 CODEBASE · 4 TARGETS</text>
+  <line x1="56" y1="50" x2="1144" y2="50" stroke="#1F413B" stroke-width="1"/>
+
+  <!-- 5 个技术卡 -->
+  <g transform="translate(56 64)">
+    <!-- 卡 1: uni-app -->
+    <g transform="translate(0 0)">
+      <rect width="200" height="100" rx="12" fill="url(#techCard)" stroke="#2A4F4A" stroke-width="1"/>
+      <!-- uni-app 图标:简化 U 字母在方块中 -->
+      <rect x="20" y="22" width="32" height="32" rx="6" fill="none" stroke="#4FB3A5" stroke-width="1.5"/>
+      <path d="M 28 32 V 42 Q 28 48 36 48 Q 44 48 44 42 V 32" fill="none" stroke="#4FB3A5" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="68" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="16" font-weight="600" fill="#E8E4D9">uni-app</text>
+      <text x="68" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="0.4" fill="#4FB3A5">框架</text>
+      <text x="68" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#6B8682">跨端编译</text>
+      <text x="68" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#6B8682">单代码库多端</text>
+    </g>
+    <!-- 卡 2: Vue 2 -->
+    <g transform="translate(222 0)">
+      <rect width="200" height="100" rx="12" fill="url(#techCard)" stroke="#2A4F4A" stroke-width="1"/>
+      <!-- Vue 图标:V 形 -->
+      <path d="M 20 24 L 36 50 L 52 24" fill="none" stroke="#4FB3A5" stroke-width="1.5" stroke-linejoin="round" stroke-linecap="round"/>
+      <text x="68" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="16" font-weight="600" fill="#E8E4D9">Vue 2</text>
+      <text x="68" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="0.4" fill="#4FB3A5">视图层</text>
+      <text x="68" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#6B8682">响应式数据</text>
+      <text x="68" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#6B8682">组件化开发</text>
+    </g>
+    <!-- 卡 3: SCSS + BEM -->
+    <g transform="translate(444 0)">
+      <rect width="200" height="100" rx="12" fill="url(#techCard)" stroke="#2A4F4A" stroke-width="1"/>
+      <!-- SCSS 图标:大括号 -->
+      <path d="M 28 22 Q 22 22 22 30 V 38 Q 22 44 16 44 Q 22 44 22 50 V 58 Q 22 66 28 66" fill="none" stroke="#4FB3A5" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M 48 22 Q 54 22 54 30 V 38 Q 54 44 60 44 Q 54 44 54 50 V 58 Q 54 66 48 66" fill="none" stroke="#4FB3A5" stroke-width="1.5" stroke-linejoin="round"/>
+      <text x="68" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="16" font-weight="600" fill="#E8E4D9">SCSS · BEM</text>
+      <text x="68" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="0.4" fill="#4FB3A5">样式系统</text>
+      <text x="68" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#6B8682">变量 / 嵌套</text>
+      <text x="68" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#6B8682">block__elem--mod</text>
+    </g>
+    <!-- 卡 4: uView UI -->
+    <g transform="translate(666 0)">
+      <rect width="200" height="100" rx="12" fill="url(#techCard)" stroke="#2A4F4A" stroke-width="1"/>
+      <!-- uView 图标:方块网格 -->
+      <rect x="20" y="22" width="12" height="12" rx="2" fill="none" stroke="#4FB3A5" stroke-width="1.5"/>
+      <rect x="40" y="22" width="12" height="12" rx="2" fill="none" stroke="#4FB3A5" stroke-width="1.5"/>
+      <rect x="20" y="42" width="12" height="12" rx="2" fill="none" stroke="#4FB3A5" stroke-width="1.5"/>
+      <rect x="40" y="42" width="12" height="12" rx="2" fill="#4FB3A5"/>
+      <text x="68" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="16" font-weight="600" fill="#E8E4D9">uView UI</text>
+      <text x="68" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="0.4" fill="#4FB3A5">组件库</text>
+      <text x="68" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#6B8682">60+ 组件</text>
+      <text x="68" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#6B8682">多端兼容</text>
+    </g>
+    <!-- 卡 5: HBuilderX -->
+    <g transform="translate(888 0)">
+      <rect width="200" height="100" rx="12" fill="url(#techCard)" stroke="#2A4F4A" stroke-width="1"/>
+      <!-- HBuilderX 图标:HX 字母 -->
+      <path d="M 20 26 V 52 M 32 26 V 52 M 20 38 H 32 M 44 26 L 56 52 M 56 26 L 44 52" fill="none" stroke="#4FB3A5" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="68" y="34" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="16" font-weight="600" fill="#E8E4D9">HBuilderX</text>
+      <text x="68" y="52" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="10" letter-spacing="0.4" fill="#4FB3A5">开发工具</text>
+      <text x="68" y="74" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#6B8682">uni-app IDE</text>
+      <text x="68" y="88" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', sans-serif" font-size="11" fill="#6B8682">云打包 / 真机调试</text>
+    </g>
+  </g>
+
+  <!-- 多端输出条 -->
+  <g transform="translate(56 184)">
+    <text x="0" y="14" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="1" fill="#6B8682">OUTPUT</text>
+    <line x1="68" y1="10" x2="180" y2="10" stroke="#1F413B" stroke-width="1"/>
+    <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="0.6">
+      <rect x="200" y="0" width="64"  height="22" rx="11" fill="none" stroke="#2A4F4A"/>
+      <text x="232" y="15" text-anchor="middle" fill="#9DB5B0">H5</text>
+      <rect x="278" y="0" width="110" height="22" rx="11" fill="none" stroke="#2A4F4A"/>
+      <text x="333" y="15" text-anchor="middle" fill="#9DB5B0">微信小程序</text>
+      <rect x="402" y="0" width="56"  height="22" rx="11" fill="none" stroke="#2A4F4A"/>
+      <text x="430" y="15" text-anchor="middle" fill="#9DB5B0">iOS</text>
+      <rect x="472" y="0" width="72"  height="22" rx="11" fill="none" stroke="#2A4F4A"/>
+      <text x="508" y="15" text-anchor="middle" fill="#9DB5B0">Android</text>
+      <rect x="558" y="0" width="80"  height="22" rx="11" fill="none" stroke="#E8B547"/>
+      <text x="598" y="15" text-anchor="middle" fill="#E8B547">后台 SOS</text>
+    </g>
+    <text x="1144" y="14" text-anchor="end" font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="11" letter-spacing="0.6" fill="#6B8682">1 codebase · 4 targets</text>
+  </g>
+</svg>
